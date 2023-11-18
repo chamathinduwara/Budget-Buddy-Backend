@@ -1,0 +1,20 @@
+.gradle
+build
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Ignore Gradle GUI config
+gradle-app.setting
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!**/src/main/**/gradle-wrapper.jar
+!**/src/test/**/gradle-wrapper.jar
+
+.idea
+*.iml
+*.ipr
+*.iws
+

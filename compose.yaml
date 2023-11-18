@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres:16
+    restart: no
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+      POSTGRES_DB: budgetbuddy
+    ports:
+        - "5434:5432"
+  budgetbuddy-app:
+    image: "budgetbuddy/budgetbuddy-backend-api"
+    build:
+        context: .
+        dockerfile: Dockerfile
+    environment:
+      - DATASOURCE_URL=jdbc:postgresql://db:5432/budgetbuddy
+      - DATASOURCE_USERNAME=root
+      - DATASOURCE_PASSWORD=root
+    ports:
+        - "8082:8080"
+    depends_on:
+        - db

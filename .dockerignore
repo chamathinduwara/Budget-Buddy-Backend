@@ -1,0 +1,22 @@
+# Gradle:
+.gradle/
+build/
+!build/libs/*.jar
+
+# Kotlin:
+*.kt~
+
+# Spring Boot:
+spring-devtools.properties
+
+# Miscellaneous:
+.DS_Store
+.git/
+.gitignore
+*.iml
+*.ipr
+*.iws
+.idea/
+*.swp
+*.swo
+*~
