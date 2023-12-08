@@ -1,2 +1,4 @@
-package com.chamath.budgetbuddy.config;public class CorsConfig {
+package com.chamath.budgetbuddy.config;
+
+public class CorsConfig {
 }
