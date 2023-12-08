@@ -17,7 +17,7 @@ RUN openssl genrsa -out /app/certs/keypair.pem 2048 \
 #ENV PRIVATE_KEY_PATH=/app/certs/private.pem
 #ENV PUBLIC_KEY_PATH=/app/certs/public.pem
 
-ENV DATASOURCE_URL=jdbc:postgresql://localhost:5432/budgetbuddy
+ENV DATASOURCE_URL=jdbc:postgresql://localhost:5432/budget-buddy
 ENV DATASOURCE_USERNAME=root
 ENV DATASOURCE_PASSWORD=root
 
